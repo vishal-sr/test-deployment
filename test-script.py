@@ -1,3 +1,7 @@
 import streamlit as st
 
-st.markdown("Hello world!!!")
+
+with open("document.txt") as file:
+    for line in file:
+
+        st.markdown(line)
